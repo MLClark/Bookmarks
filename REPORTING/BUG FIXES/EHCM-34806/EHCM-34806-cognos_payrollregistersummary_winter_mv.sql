@@ -1,4 +1,4 @@
-CREATE MATERIALIZED VIEW public.cognos_payrollregistersummary_winter_mv AS 
+--CREATE MATERIALIZED VIEW public.cognos_payrollregistersummary_winter_mv AS 
  SELECT DISTINCT ph.personid,
     ((pn.fname::text || ' '::text) || COALESCE(pn.mname::text || ' '::text, ''::text)) || pn.lname::text AS employeename,
     (((pn.lname::text || ' '::text) || pn.fname::text) || ' '::text) || COALESCE(pn.mname, ''::character varying)::text AS employeenamelastfirst,
@@ -81,8 +81,8 @@ CREATE MATERIALIZED VIEW public.cognos_payrollregistersummary_winter_mv AS
             "position"("substring"(cp_1.patternmask::text, "position"(cp_1.patternmask::text, '-'::text) + 1), '-'::text) AS dash2,
             "position"("substring"("substring"(cp_1.patternmask::text, "position"(cp_1.patternmask::text, '-'::text) + 1), "position"(cp_1.patternmask::text, '-'::text) + 1), '-'::text) AS dash3
            FROM country_pattern cp_1
-          WHERE cp_1.patterntype = 'identity'::bpchar) pm ON pm.countrycode = pi.countrycode
+          WHERE cp_1.patterntype = 'identity'::bpchar) pm ON pm.countrycode = pi.countrycode and ph.personid = '10182'       
                    
 
-WITH NO DATA;
+--WITH NO DATA;
 
