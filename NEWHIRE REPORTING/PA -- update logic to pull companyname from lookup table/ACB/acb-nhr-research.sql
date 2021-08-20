@@ -1,0 +1,1 @@
+select * from edi.edi_last_update where feedid = 'NewHireReporting_PA';

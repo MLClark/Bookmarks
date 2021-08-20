@@ -1,0 +1,6 @@
+SELECT MAX(pbe2.personbeneelectionpid)
+      FROM person_bene_election pbe2
+     WHERE pbe2.personid = '4100'
+       AND pbe2.benefitsubclass = '10'
+       AND pbe2.benefitelection IN ('T','E')
+       AND pbe2.enddate = '2199-12-31';

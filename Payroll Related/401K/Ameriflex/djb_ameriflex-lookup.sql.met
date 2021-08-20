@@ -1,0 +1,7 @@
+#Extended file properties defined by DbVisualizer
+#Mon Feb 01 12:02:01 EST 2021
+file.comment=
+exec.schema=public
+file.encoding=Cp1252
+exec.connection=7
+exec.catalog=PSD_DJB_PG

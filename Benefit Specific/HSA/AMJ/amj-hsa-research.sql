@@ -1,0 +1,1 @@
+select * from pay_schedule_period where payrolltypeid = 1 and date_part('year',periodpaydate)='2019' and date_part('month',periodpaydate)='03';

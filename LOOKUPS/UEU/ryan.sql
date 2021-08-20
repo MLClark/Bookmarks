@@ -1,0 +1,2 @@
+update edi.edi_last_update set lastupdatets = '2021-04-22 00:00:00' where feedid = 'TASC_Cobra_QE_Export';
+update edi.edi_last_update set lastupdatets = '2021-04-22 00:00:00' where feedid = 'TASC_Cobra_GIN_Export';

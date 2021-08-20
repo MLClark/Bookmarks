@@ -1,0 +1,106 @@
+select * from edi.edi_last_update ; 
+select * from edi.edi_last_update where feedid = 'BDF_IGOE_COBRA_NPM_EXPORT';
+
+delete from edi.edi_last_update where feedid = 'BDF_IGOE_NPM_EXPORT';
+
+update edi.edi_last_update set lastupdatets = '2018-01-01 00:00:00' where feedid in ('NewHireReporting_TX');
+insert into edi.edi_last_update (feedid, lastupdatets) values ('AYV_SLC_EE_Benefit_Ded_Export','2017-12-31 00:00:00');
+insert into edi.edi_last_update (feedid, lastupdatets) values ('HMN_PS_CogDetGet_Export','2018-03-31 00:00:00');
+insert into edi.edi_last_update (feedid, lastupdatets) values ('BEK_ProBenefits_QE_Export','2018-01-01 00:00:00');
+
+insert into edi.edi_last_update (feedid, lastupdatets) values ('DAB_EBenefits_HSA_Export','2018-01-01 00:00:00');
+
+insert into edi.edi_last_update (feedid, lastupdatets) values ('AWT_Discovery_COBRA_NPM_Export','2018-01-01 00:00:00');
+insert into edi.edi_last_update (feedid, lastupdatets) values ('AOL_Wellsfargo_401K_Eligibility_Export','2017-08-31 00:00:00');
+insert into edi.edi_last_update (feedid, lastupdatets) values ('BCE_med_den_vision_QVI_Benefits','2018-01-01 00:00:00');
+
+update edi.edi_last_update set lastupdatets = '2018-04-01 00:00:00' where feedid in ('AWT_Discovery_COBRA_NPM_Export');
+update edi.edi_last_update set lastupdatets = '2018-01-01 07:01:54' where feedid in ('AWT_Discovery_COBRA_QB_Export');
+2018-06-26 07:05:14
+
+
+update edi.edi_last_update set lastupdatets = '2018-06-19 00:00:00' where feedid in ('BCE_med_den_vision_QVI_Benefits');
+
+update edi.edi_last_update set lastupdatets = '2018-06-05 00:00:00' where feedid in ('BDF_IGOE_COBRA_NPM_EXPORT');
+update edi.edi_last_update set lastupdatets = '2018-01-01 07:01:54' where feedid in ('BDF_IGOE_QB_EXPORT');
+
+update edi.edi_last_update set lastupdatets = '2018-01-01 07:01:54' where feedid in ('ASP_SHDR_COBRA_QB_Export');
+update edi.edi_last_update set lastupdatets = '2018-01-01 07:01:54' where feedid in ('ASP_SHDR_COBRA_NPM_Export');
+2018-02-20 07:01:51 
+2018-03-13 07:02:32
+2018-03-20 07:02:32
+2018-03-27 07:03:45
+2018-04-04 07:02:32
+2018-04-10 07:01:54
+
+update edi.edi_last_update set lastupdatets = '2018-04-01 00:00:00' where feedid in ('AYV_SHDR_COBRA_QB_Export');
+update edi.edi_last_update set lastupdatets = '2018-01-01 00:00:00' where feedid in ('AYV_SHDR_COBRA_NPM_Export');
+
+update edi.edi_last_update set lastupdatets = '2018-01-01 00:00:00' where feedid in ('AMJ_COBRA_EBC_QB');  
+update edi.edi_last_update set lastupdatets = '2018-01-01 00:00:00' where feedid in ('AMJ_COBRA_EBC_NPM');  
+2018-03-20 07:02:00
+
+
+update edi.edi_last_update set FEEDID = 'HMN_Monthly_Promotion_Report_Export' where feedid in ('HMN_Monthly_Promotion_Report');
+update edi.edi_last_update set lastupdatets = '2018-05-31 00:00:00' where feedid in ('HMN_PS_CogDetGet_Export');
+
+update edi.edi_last_update set lastupdatets = '2018-02-01 00:00:00' where feedid in ('AJG_Cobra_Initial_Notice');
+
+
+update edi.edi_last_update set lastupdatets = '2017-01-01 00:00:00' where feedid in ('AWT_EpochSeniorLiving_COBRA_NPM_Feed');  
+
+
+
+update edi.edi_last_update set lastupdatets = '2018-05-01 00:00:00' where feedid in( 'HMN_Monthly_Promotion_Report');  
+update edi.edi_last_update set lastupdatets = '2018-06-07 00:00:00' where feedid in ('HMN_401k_Census_File_Export');  
+
+
+update edi.edi_last_update set lastupdatets = '2018-01-01 00:00:00' where feedid in ('RSI_DBS_COBRA_NPM_Feed'); 
+2018-04-24 06:00:33
+
+update edi.edi_last_update set lastupdatets = '2018-05-29 06:00:08' where feedid in ('RSI_DBS_COBRA_QB_Feed'); 
+2018-05-15 06:01:30 
+2017-10-24 06:00:08
+2018-02-27 06:00:35
+2018-06-05 06:00:09
+
+2017-08-01 07:08:06 2017-09-12 13:08:42
+'Unum_StdLifeADD_Export','Unum_VolLifeADD_Export',
+update edi.edi_last_update set lastupdatets = '2000-01-01 00:00:00' where feedid in ('BEF_StandardPayrollExtract');
+RSI_DBS_COBRA_QB_Feed 2017-05-23 06:00:08
+RSI_DBS_COBRA_NPM_Feed 2017-05-23 06:00:04
+
+select * from mtaxptshdr100
+
+
+update edi.edi_last_update set lastupdatets = '2017-10-16 00:00:00' where feedid in ('RND_NewHire_Term');  
+2017-10-16 00:00:00
+update edi.edi_last_update set lastupdatets = '2017-08-25 07:00:00' where feedid in ('AOL_Flex_Facts');
+2017-08-25 07:00:00
+update edi.edi_last_update set lastupdatets = '2017-12-01 07:01:05' where feedid in ('RSI_Unum_VolLifeADD_Export','RSI_Unum_StdLifeADD_Export');
+2017-12-01 07:01:05  
+2017-11-08 07:37:55
+update edi.edi_last_update set lastupdatets = '2018-02-27 06:00:35' where feedid in ('RSI_DBS_COBRA_QB_Feed','RSI_DBS_COBRA_NPM_Feed');  
+'2017-11-14 06:01:20'
+'2017-12-12 06:01:30'
+'2018-01-02 06:02:48'
+'2018-01-09 06:02:03'
+'2018-02-27 06:00:35'
+update edi.edi_last_update set lastupdatets = '2017-06-30 00:00:00' where feedid in ('ABD_BRMS_Ongoing_Beneft_Changes');  
+2017-01-01 00:00:00
+update edi.edi_last_update set lastupdatets = '2017-01-01 00:00:00' where feedid in ('ARO_Unum_STD_Export');  
+2017-01-01 00:00:00
+
+delete from edi.edi_last_update  where feedid = '${Internal.Job.FeedId}';
+
+update edi.edi_last_update set lastupdatets = '2017-12-15 00:00:00' where feedid in ('AOL_Wellsfargo_401K_Eligibility_Export');  
+
+update edi.edi_last_update set lastupdatets = '2018-01-16 00:00:00' where feedid in ('ARO_TASC_FlexSpending_Eligibility_Export'); 
+2018-01-09 00:00:00
+update edi.edi_last_update set lastupdatets = '2018-01-02 00:00:00' where feedid in ('ARO_TASC_FlexSpending_Payroll_Export'); 
+
+update edi.edi_last_update set lastupdatets = '2018-01-05 00:00:00' where feedid in ('ARO_Unum_VolLife_Export','ARO_Unum_STD_Export','ARO_Unum_BasicLife-ADD-LTD'); 
+
+
+
+insert into edi.edi_last_update (feedid, lastupdatets) values ('NewHireReporting_CA','2017-01-01 00:00:00');

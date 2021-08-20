@@ -1,0 +1,3 @@
+select * from benefit_plan_desc where current_date between effectivedate and enddate and current_timestamp between createts and endts and benefitsubclass in ('26','13');
+select * from person_bene_election where current_date between effectivedate and enddate and current_timestamp between createts and endts and benefitsubclass in ('26') and benefitelection <> 'W' and selectedoption = 'Y';
+select * from dependent_enrollment where benefitsubclass = '26';

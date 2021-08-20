@@ -1,0 +1,2 @@
+select * from pay_schedule_period where date_part('year',periodpaydate)=date_part('year',current_date) and date_part('month',periodpaydate)=date_part('month',current_date);
+select * from pay_schedule_period where date_part('year',periodpaydate)=date_part('year',current_date) and date_part('month',periodpaydate)='02';

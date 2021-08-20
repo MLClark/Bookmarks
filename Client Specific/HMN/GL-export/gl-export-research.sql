@@ -1,0 +1,1 @@
+select * from person_deduction_setup

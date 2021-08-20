@@ -1,0 +1,2 @@
+select * from person_bene_election where benefitsubclass in ('10','11','14') and effectivedate >= '2018-09-01' and 
+current_timestamp between createts and endts and benefitelection = 'E' and selectedoption = 'Y';

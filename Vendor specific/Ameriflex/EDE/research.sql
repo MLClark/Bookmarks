@@ -1,0 +1,1 @@
+select * from person_bene_election where personid = '22' and benefitsubclass = '6Z';

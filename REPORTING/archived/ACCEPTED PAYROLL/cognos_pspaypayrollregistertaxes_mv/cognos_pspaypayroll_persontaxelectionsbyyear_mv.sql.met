@@ -1,0 +1,7 @@
+#Extended file properties defined by DbVisualizer
+#Mon Mar 29 08:51:21 EST 2021
+file.comment=
+exec.schema=public
+file.encoding=Cp1252
+exec.connection=6
+exec.catalog=postgres

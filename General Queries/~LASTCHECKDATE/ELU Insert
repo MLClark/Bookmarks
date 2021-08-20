@@ -1,0 +1,7 @@
+insert into edi.edi_last_update (feedid, lastupdatets) values ( 'RND_NewHire_Term','2017-06-16 00:00:00');
+update edi.edi_last_update set lastupdatets = current_date where feedid in ( 'ANK_MM_401k_Demo_HDR_Export');
+update edi.edi_last_update set lastupdatets = current_date where feedid in ( 'ANK_MM_401k_Demo_HDR_Export');
+update edi.edi_last_update set lastupdatets = current_date + interval '1 seconds' where feedid in ( 'ANK_MM_401k_Demo_HDR_Export');
+update edi.edi_last_update set lastupdatets = lastupdatets + interval '1 seconds' where feedid in ( 'ANK_MM_401k_Demo_HDR_Export');
+select * from edi.edi_last_update where feedid in ( 'ANK_MM_401k_Demo_HDR_Export');
+update edi.edi_last_update set lastupdatets = lastupdatets + interval '1 seconds' where feedid in ( 'ANK_MM_401k_Demo_HDR_Export');
