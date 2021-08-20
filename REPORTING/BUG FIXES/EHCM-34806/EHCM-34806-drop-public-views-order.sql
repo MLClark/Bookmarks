@@ -51,9 +51,9 @@ CREATE MATERIALIZED VIEW public.cognos_payrollregistersummary_winter_mv AS
     phc.is_reissued,
     ph.payrollfinal,
     ' ' as paymenttype,
-    ' ' as processingorder,
-    ' ' ::varchar(5) as sequencenumber,
-    case when (pd.remoteemployee = 'Y' and pgd.person_default_perioddate >= pd.effectivedate::date) then pa.stateprovincecode else la.stateprovincecode end as workstate
+    0 as processingorder,
+    ' ' ::varchar(5) as sequencenumber ,
+    case when pd.remoteemployee = 'Y' then pa.stateprovincecode else la.stateprovincecode end as workstate
    FROM pspay_payment_header ph
      JOIN company_parameters cp ON cp.companyparametername = 'PInt'::bpchar AND cp.companyparametervalue::text = 'PSPAY'::text
      JOIN paymentheaderclassifications phc ON phc.paymentheaderid = ph.paymentheaderid

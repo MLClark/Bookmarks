@@ -54,10 +54,10 @@ CREATE MATERIALIZED VIEW payroll.cognos_payrollregistersummary_mv AS
             WHEN pp.pspaypayrollstatusid = 4 THEN 'Y'::text
             ELSE 'N'::text
         END AS payrollfinal,
-     ph.paymenttype ::text as paymenttype,
-     pt.processingorder ::text as processingorder,
+     pt.paymenttypedesc as paymenttype,
+     pt.processingorder as processingorder,
      ph.sequencenumber ::varchar(5),
-     case when (pd.remoteemployee = 'Y' and pgd.person_default_perioddate >= pd.effectivedate::date) then pa.stateprovincecode else la.stateprovincecode end as workstate
+     case when pd.remoteemployee = 'Y' then pa.stateprovincecode else la.stateprovincecode end as workstate
      
    FROM payroll.payment_header ph
      JOIN payroll.payment_types pt ON pt.paymenttype = ph.paymenttype 
